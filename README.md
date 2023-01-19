@@ -2,7 +2,7 @@
 # coil-wat
 
 
-This Web Assembly program, written by hand in the text format and not compiled from some other source code, implements and displays a special kind of elementary cellular automata with unicode full blocks. This automaton is 'special' because each row is both the current state or seed and the current rule. In other words, the current rule is mutated according to that current rule. Occasionally a fixed point is discovered within the set number of rows (32), which is bound to happen anyway after enough time steps (within 2^32). I basically ported Rust code (also in this repo) which uses the rotation of bits extensively. 
+This Web Assembly program, written by hand in the text format and not compiled from some other language (which keeps it small!), implements and displays a special kind of elementary cellular automata with unicode full blocks. This automaton is 'special' because each row is both the current state or seed and the current rule. In other words, the current rule is mutated according to that current rule. Occasionally a fixed point is discovered within the set number of rows (32), which is bound to happen anyway after enough time steps (within 2^32). I basically ported Rust code (also in this repo) which uses the rotation of bits extensively. 
 
 The more complicated/essential part of the program is:
 
