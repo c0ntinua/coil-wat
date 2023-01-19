@@ -45,7 +45,8 @@
         (local $i i32 ) 
         (local.set $i (i32.const 31))
         (loop $loop
-            (call $print_bit_as_block ( call $ith_bit (local.get $x) (local.get $i) )) 
+            (call $print_bit_as_block ( call $ith_bit (local.get $x) (local.get $i) ))
+            (call $print_bit_as_block ( call $ith_bit (local.get $x) (local.get $i) ))
             (local.set $i (i32.sub (local.get $i) (i32.const 1))) 
             (br_if $loop (i32.le_s (i32.const 0) (local.get $i) ))
         )
